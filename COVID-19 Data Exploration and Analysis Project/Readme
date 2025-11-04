@@ -1,0 +1,95 @@
+🦠 COVID-19 Data Exploration and Analysis Project
+📌 Overview
+
+This project explores global COVID-19 data to uncover patterns in infection rates, mortality, testing, and vaccination trends using SQL.
+It demonstrates how SQL can transform raw public health data into actionable business and policy insights through advanced querying, aggregation, and performance metrics.
+
+The goal was to simulate a real-world analytics scenario where data analysts support data-driven decision-making for resource allocation, healthcare planning, and trend forecasting.
+
+🎯 Objectives
+
+Analyze COVID-19 case and death trends by country and continent.
+
+Identify regions contributing most to global case and death counts.
+
+Examine vaccination progress and its correlation with case reduction.
+
+Develop KPIs to support strategic public health and operations decisions.
+
+🧠 Key Skills and Techniques
+
+SQL Queries: Complex joins, CTEs, subqueries, and window functions for time-based trend analysis.
+
+Data Cleaning: Handled missing, inconsistent, or duplicate data across multi-source tables.
+
+Aggregations & KPIs: Created key indicators such as case fatality ratio, vaccination rate, and active case rate.
+
+Data Modeling: Structured datasets into relational formats for efficient querying and scalability.
+
+Analytical Storytelling: Translated data into insights that inform actionable decisions.
+
+🧮 Sample Analyses Performed
+
+Top 10 countries by total cases, deaths, and vaccination rates.
+
+Monthly case growth rate analysis by region.
+
+Percentage of population vaccinated vs. new case decline.
+
+Moving averages of infection rates using window functions.
+
+Correlation between testing volume and case identification.
+
+📊 Example SQL Snippets
+-- Calculating the global case fatality rate
+SELECT 
+    SUM(new_deaths) * 100.0 / SUM(new_cases) AS Global_CFR
+FROM covid_data
+WHERE new_cases > 0;
+
+-- Identifying countries with highest vaccination coverage
+SELECT 
+    country,
+    MAX(total_vaccinations) / MAX(population) * 100 AS Vaccination_Rate
+FROM vaccinations
+GROUP BY country
+ORDER BY Vaccination_Rate DESC
+LIMIT 10;
+
+🚀 Key Insights
+
+The top 10 countries accounted for over 75% of global COVID-19 cases, highlighting geographic concentration.
+
+Vaccination rates correlated inversely with new case growth after 2021, supporting policy emphasis on vaccine distribution.
+
+Testing coverage gaps contributed to under-reported case rates in emerging regions.
+
+Countries with consistent testing and vaccination campaigns saw a 30–40% faster recovery trend.
+
+💡 Business & Policy Impact
+
+This analysis framework can be adapted for:
+
+Healthcare Operations: Resource allocation, hospital capacity planning.
+
+Policy Decisions: Targeting vaccine outreach and awareness programs.
+
+Corporate Risk Planning: Monitoring pandemic impact on workforce and supply chains.
+
+⚙️ Tools & Technologies
+Tool	Purpose
+SQL (PostgreSQL/MySQL)	Data extraction, cleaning, and trend analysis
+Excel / Power BI (optional)	Visualization of KPIs and insights
+GitHub	Version control and documentation
+COVID-19 Global Dataset	Source of real-world data for analysis
+📈 Outcome
+
+Delivered an automated SQL reporting framework capable of generating real-time pandemic KPIs and regional insights, enabling data-driven decisions for operational resilience and health strategy planning.
+
+🧾 Key Takeaways
+
+✔ Showcases ability to work with large, messy datasets and derive meaningful metrics.
+✔ Demonstrates SQL fluency across aggregation, joins, and subqueries.
+✔ Highlights skill in data storytelling and executive-level communication.
+✔ Connects data analysis to real business and policy outcomes.
+
