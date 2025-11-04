@@ -39,7 +39,16 @@ Data Storytelling: Transforming raw data into actionable business insights.
 Problem-Solving: Addressing operational inefficiencies, enhancing customer engagement, and optimizing workflows.
 Attention to Detail: Ensuring data integrity and consistency across datasets.
 
+
 8. As a Data Analyst I can:
 Work with diverse datasets to address unique business challenges.
 Ensure high data quality for reliable decision-making.
 Provide meaningful insights that drive operational improvements and strategic planning.
+
+
+
+### 📂 Projects Included
+- **COVID-19 Data Exploration:** Trend analysis, joins, and KPIs on infection data.
+- **Nashville Housing Data Cleaning:** Advanced cleaning using CTEs, CASE WHEN, and normalization.
+- **Mint Classics Sales Analysis:** Sales KPIs, profit margins, and inventory optimization queries.
+
